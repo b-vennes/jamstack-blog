@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Year In Review
-image: '/assets/reflection.jpg'
+image: '/assets/images/reflection.jpg'
 imageAttributeUrl: 'https://unsplash.com/@garrettpsystems'
 imageAttributeName: 'garrett parker'
 categories: thoughts

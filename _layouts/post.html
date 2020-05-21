@@ -15,19 +15,20 @@ layout: default
       {%- endif -%}
     </p>
 
-    <img *ngIf="content.image" [ngClass.lt-md]="'article-banner-small'" [ngClass.gt-sm]="'article-banner-large'" src="{{ page.image }}">
-    <a href="{{ page.imageAttributeUrl }}" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from {{ page.imageAttributeName }}">
-      <span class="attribute-name" style="display:inline-block;padding:2px 3px">Image by {{ page.imageAttributeName }}</span>
+    {%- if page.image -%}
+      <img class="post-header-image" src="{{ page.image }}">
+    {%- endif -%}
+
+    {%- if page.imageAttributeUrl and page.imageAttributeName -%}
+    <a class="attribute-link" href="{{ page.imageAttributeUrl }}">
+      <span>Image by {{ page.imageAttributeName }}</span>
     </a>
+    {%- endif -%}
   </header>
 
   <div class="post-content e-content" itemprop="articleBody">
     {{ content }}
   </div>
-
-  {%- if site.disqus.shortname -%}
-    {%- include disqus_comments.html -%}
-  {%- endif -%}
 
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>

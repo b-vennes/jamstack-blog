@@ -2,7 +2,7 @@
 layout: post
 title:  "Building an HTML Library with Python"
 date:   2020-03-09 12:00:00 -0700
-image: '/assets/divs.jpg'
+image: '/assets/images/divs.jpg'
 imageAttributeUrl: 'https://unsplash.com/@flac666'
 imageAttributeName: 'Dominik Malinowski'
 categories: projects
