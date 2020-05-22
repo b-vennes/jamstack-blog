@@ -30,7 +30,6 @@ twitter_username: jekyllrb
 github_username:  b-vennes
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
 
