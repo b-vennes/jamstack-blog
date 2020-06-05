@@ -3,3 +3,31 @@
 
 @import "materialize";
 @import "prism";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.medium-image {
+    max-width: 600px;
+}
+
+.centered {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centered-mobile {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
