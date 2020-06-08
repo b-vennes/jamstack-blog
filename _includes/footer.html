@@ -1,26 +1,25 @@
-<footer class="page-footer">
+<footer class="page-footer white black-text text-font">
+  <hr style="border-top: 1px solid #009688;">
   <div class="container">
     <div class="row">
       <div class="col l6 s12">
-        <h5 class="white-text">{{ site.title | escape }}</h5>
-        <p class="grey-text text-lighten-4">{{- site.description | escape -}}</p>
+        <h5>{{ site.title | escape }}</h5>
+        <p>{{- site.description | escape -}}</p>
+        <a class="u-email" href="mailto:{{ site.email }}">
+          {{ site.email }}
+        </a>
       </div>
       <div class="col l4 offset-l2 s12">
-        <h5 class="white-text">Links</h5>
         <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
+          <li>
+            <a href="https://linkedin.com/in/{{site.linkedin_account_name}}">LinkedIn</a>
           </li>
           <li>
-            {%- include icon-github.html -%}
+            <a href="https://github.com/{{ site.github_username }}">GitHub: {{site.github_username}}</a>
           </li>
-          {%- if site.email -%}
-            <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-          {%- endif -%}
+          <li>
+            <a href="https://gitlab.com/{{ site.gitlab_username }}">GitLab: {{site.gitlab_username}}</a>
+          </li>
         </ul>
       </div>
     </div>

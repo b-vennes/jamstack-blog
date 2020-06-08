@@ -31,3 +31,33 @@ main {
 .mb-50 {
     margin-bottom: 50px;
 }
+
+.title-color {
+    @extend .teal-text;
+}
+
+.text-color {
+    @extend .black-text;
+}
+
+.title-font {
+    font-family: 'Merriweather', serif;
+}
+
+.text-font {
+    font-family: 'Inconsolata', monospace;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.post-content {
+    h1 h2 h3 h4 h5 {
+        font-family: 'Merriweather', serif;
+    }
+}

@@ -10,29 +10,11 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading">{{ page.list_title | default: "Posts" }}</h2>
+    <h2 class="post-list-heading title-font">{{ page.list_title | default: "Posts" }}</h2>
     <ul class="post-list">
       {%- for post in site.posts -%}
       <li>
-        <div class="row">
-          <div class="col s12 m10">
-            <div class="card small blue-grey darken-1">
-              <div class="card-image">
-                <img src="{{ post.image }}">
-                <span class="card-title">{{ post.title }}</span>
-              </div>
-              <div class="card-content">
-                <p>
-                  {%- assign date_format = "%b %-d, %Y" -%}
-                  {{ post.date | date: date_format }}
-                </p>
-              </div>
-              <div class="card-action">
-                <a href="{{ post.url | relative_url}}">Read</a>
-              </div>
-            </div>
-          </div>
-        </div>
+        {%- include card.html -%}
       </li>
       {%- endfor -%}
     </ul>
