@@ -1,0 +1,63 @@
+---
+---
+
+@import "materialize";
+@import "prism";
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+.medium-image {
+    max-width: 600px;
+}
+
+.centered {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.centered-mobile {
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.title-color {
+    @extend .teal-text;
+}
+
+.text-color {
+    @extend .black-text;
+}
+
+.title-font {
+    font-family: 'Merriweather', serif;
+}
+
+.text-font {
+    font-family: 'Inconsolata', monospace;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.post-content {
+    h1 h2 h3 h4 h5 {
+        font-family: 'Merriweather', serif;
+    }
+}

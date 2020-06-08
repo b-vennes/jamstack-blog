@@ -1,0 +1,27 @@
+<footer class="page-footer white black-text text-font">
+  <hr style="border-top: 1px solid #009688;">
+  <div class="container">
+    <div class="row">
+      <div class="col l6 s12">
+        <h5>{{ site.title | escape }}</h5>
+        <p>{{- site.description | escape -}}</p>
+        <a class="u-email" href="mailto:{{ site.email }}">
+          {{ site.email }}
+        </a>
+      </div>
+      <div class="col l4 offset-l2 s12">
+        <ul class="contact-list">
+          <li>
+            <a href="https://linkedin.com/in/{{site.linkedin_account_name}}">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://github.com/{{ site.github_username }}">GitHub: {{site.github_username}}</a>
+          </li>
+          <li>
+            <a href="https://gitlab.com/{{ site.gitlab_username }}">GitLab: {{site.gitlab_username}}</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

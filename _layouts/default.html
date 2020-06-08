@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="white">
+
+    {%- include header.html -%}
+
+    <main class="page-content centered mb-50" aria-label="Content">
+      <div class="wrapper black-text">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
+    <script>
+      M.AutoInit();
+    </script>
+
+  </body>
+
+</html>

@@ -7,7 +7,7 @@ layout: default
     <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
     <p class="post-meta">
       <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+        {%- assign date_format = "%b %-d, %Y" -%}
         {{ page.date | date: date_format }}
       </time>
       {%- if page.author -%}
@@ -15,9 +15,11 @@ layout: default
       {%- endif -%}
     </p>
 
-    {%- if page.image -%}
-      <img class="post-header-image" src="{{ page.image }}">
-    {%- endif -%}
+    <div>
+      {%- if page.image -%}
+        <img class="post-header-image medium-image" src="{{ page.image }}">
+      {%- endif -%}
+    </div>
 
     {%- if page.imageAttributeUrl and page.imageAttributeName -%}
     <a class="attribute-link" href="{{ page.imageAttributeUrl }}">
@@ -26,7 +28,7 @@ layout: default
     {%- endif -%}
   </header>
 
-  <div class="post-content e-content" itemprop="articleBody">
+  <div class="content">
     {{ content }}
   </div>
 
