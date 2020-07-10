@@ -3,11 +3,13 @@
 
   {%- include head.html -%}
 
-  <body class="white">
+  <body>
 
     {%- include header.html -%}
 
-    <main class="page-content centered mb-50" aria-label="Content">
+    {%- include sidenav.html -%}
+
+    <main class="page-content centered-content mb-50" aria-label="Content">
       <div class="wrapper black-text">
         {{ content }}
       </div>
@@ -16,10 +18,10 @@
     {%- include footer.html -%}
 
     <script src="{{ "/assets/js/prism.js" | relative_url }}"></script>
+    <script src="{{ "/assets/js/materialize.js" | relative_url }}"></script>
     <script>
       M.AutoInit();
     </script>
-
   </body>
 
 </html>

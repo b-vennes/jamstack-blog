@@ -4,10 +4,42 @@
 @import "materialize";
 @import "prism";
 
+$primary: #ffca28;
+$dark: #000000;
+$light: #ffffff;
+
+$primary-font: 'Georgia', serif;
+$secondary-font: 'Helvetica', sans-serif;
+
+$small-screen-size: 600px;
+
 body {
+    @extend .grey, .darken-3;
+
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+nav {
+    @extend .orange, .lighten-1;
+    @extend .black-text;
+
+    .nav-text-color {
+        @extend .black-text;
+    }
+}
+
+@media only screen and (max-width: $small-screen-size) {
+    nav {
+        .brand-logo {
+            font-size: large !important;
+        }
+    }
+}
+
+footer {
+    @extend .grey, .darken-3
 }
 
 main {
@@ -15,37 +47,43 @@ main {
 }
 
 .medium-image {
-    max-width: 600px;
+    max-width: 80%;
+    border-radius: 5px;
 }
 
-.centered {
-    margin-left: 25%;
-    margin-right: 25%;
+@media only screen and (max-width: $small-screen-size) {
+    .medium-image {
+        max-width: 95%;
+        border-radius: 5px;
+    }
 }
 
-.centered-mobile {
+.centered-content {
     margin-left: 10%;
     margin-right: 10%;
+}
+
+@media only screen and (max-width: $small-screen-size) {
+    .centered-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
 }
 
 .mb-50 {
     margin-bottom: 50px;
 }
 
-.title-color {
-    @extend .teal-text;
-}
-
 .text-color {
-    @extend .black-text;
+    @extend .white-text;
 }
 
 .title-font {
-    font-family: 'Merriweather', serif;
+    font-family: $primary-font;
 }
 
 .text-font {
-    font-family: 'Inconsolata', monospace;
+    font-family: $secondary-font;
 }
 
 .italic {
@@ -56,8 +94,66 @@ main {
     font-weight: bold;
 }
 
-.post-content {
-    h1 h2 h3 h4 h5 {
-        font-family: 'Merriweather', serif;
+.blog-title-font {
+    font-family: $primary-font;
+    font-weight: bold;
+    font-size: large;
+}
+
+.blog-title-color {
+    @extend .black-text;
+}
+
+article {
+    color: $light;
+    font-family: $secondary-font;
+
+    h1, h2, h3, h4, h5 {
+        color: $light;
+        font-family: $primary-font;
+    }
+
+    h1 {
+        font-weight: bold;
+    }
+
+    blockquote {
+        border-left: 5px solid $primary;
+    }
+
+    ul {
+        padding-left: 2rem !important;
+    }
+}
+
+a {
+    color: $primary;
+}
+
+.text-no-wrap {
+    white-space: nowrap;
+}
+
+.sidenav {
+    @extend .grey, .darken-3;
+    max-width: 40%;
+}
+
+.post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    .card {
+        @extend .grey, .darken-4;
+
+        .read-link {
+            color: $primary;
+        }
+    }
+}
+
+@media only screen and (max-width: $small-screen-size) {
+    .post-grid {
+        grid-template-columns: repeat(1, 1fr);
     }
 }

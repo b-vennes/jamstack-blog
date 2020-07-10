@@ -10,14 +10,8 @@ layout: default
   {{ content }}
 
   {%- if site.posts.size > 0 -%}
-    <h2 class="post-list-heading title-font">{{ page.list_title | default: "Posts" }}</h2>
-    <ul class="post-list">
-      {%- for post in site.posts -%}
-      <li>
-        {%- include card.html -%}
-      </li>
-      {%- endfor -%}
-    </ul>
+    <h2 class="text-color title-font">{{ page.list_title | default: "Posts" }}</h2>
+    {%- include card-grid.html -%}
 
   {%- endif -%}
 

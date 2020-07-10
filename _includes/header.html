@@ -1,21 +1,22 @@
 <div class="navbar-fixed">
-  <nav class="white">
+  <nav>
     <div class="nav-wrapper">
-      <a href="{{ "/" | relative_url }}" class="brand-logo center title-color text-font">{{ site.title }}</a>
+      <a href="{{ "/" | relative_url }}" class="brand-logo center text-no-wrap blog-title-font blog-title-color">{{ site.title }}</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons nav-text-color">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
           <li>
-            <a class="title-color text-font" href="{{ "/" | relative_url }}">
+            <a class="nav-text-color text-font" href="{{ "/" | relative_url }}">
               Posts
             </a>
           </li>
           <li>
-            <a class="title-color text-font" href="{{ "/about" | relative_url }}">
+            <a class="nav-text-color text-font" href="{{ "/about" | relative_url }}">
               About
             </a>
           </li>
           <li>
-            <a class="title-color text-font" href="{{ "/resume" | relative_url }}">
-              Resume
+            <a class="nav-text-color text-font" href="{{ "/resume" | relative_url }}">
+              Résumé
             </a>
           </li>
       </ul>
