@@ -7,7 +7,7 @@ imageAttributeName: 'garrett parker'
 categories: thoughts
 ---
 
-When I graduated from university in Sping 2019 I couldn't wait to get into the software industry and start getting my hands on real software projects.  There were so many things I wanted to learn and I wanted to learn them all as soon as I could. I was overconfident for certain, but I also know there was a lot I didn't know.  These are a few of the things I've learned in the last year working on two different teams with two very different dynamics, processes, and roles.
+When I graduated from university in Spring 2019 I couldn't wait to get into the software industry and start getting my hands on real software projects.  There were so many things I wanted to learn and I wanted to learn them all as soon as I could. I was overconfident for certain, but I also know there was a lot I didn't know.  These are a few of the things I've learned in the last year working on two different teams with two very different dynamics, processes, and roles.
 
 ### Take Time In Learning A New Skill
 
@@ -56,3 +56,7 @@ In 2018, I worked 160 hours in the span of two weeks splitting time between my i
 I don't think I'll ever want to push myself so hard again.  Even though I learned a lot and accomplished something great, it definitely was not a sustainable behavior. I've been trying to manage my self-taught learning with that project in mind.  Although anything I work on could really teach me a lot, I have to remember to balance my hobbies with my relationships and my responsibilities.  In 2020 I am really hoping to move closer to an equilibrium between all the important facets of my life.
 
 ### Build Relationships With Coworkers
+
+The people you work with will be the ones who will expand your horizons to new oppurtunities. They are the ones who will speak up for you if you need it, recommend you to new jobs, and get you in contact with peopke who could take your career to new places.
+
+Beyond career development, the people you work with will give you new perspectives on all aspects of your life. Although the software development community tends to be dominated by the same type of person, white males with a wealthy upbringing, everyone has their own unique experiences. Their perspective on the world can help you improve your own. They can push you to rethink ideologies that you would otherwise have set in stone. Being around others that are different than you can mold you into a better person than you would otherwise be by staying closed off.

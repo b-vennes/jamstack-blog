@@ -1,17 +1,17 @@
 ---
 layout: post
-title: Top Ten Tools, Libraries, and Languages -- Summer 2020
-categories: projects
+title: Top Ten Tools, Libraries, and Languages -- 2020
+categories: thoughts
 image: '/assets/images/space-1.jpg'
 imageAttributeUrl: 'https://unsplash.com/@tavi004'
 imageAttributeName: 'Octavian Rosca'
 ---
 
-A rundown of software development tools, libraries, and languages that I love working with in 2020.
+A rundown of software development tools, libraries, and languages that I've loved working with in 2020.
 
 ## 10. Angular
 
-My go-to client-side framework.
+_My go-to client-side framework._
 
 [Home](https://angular.io/) / [GitHub](https://github.com/angular/angular) / [Getting Started](https://angular.io/guide/setup-local)
 
@@ -25,7 +25,7 @@ My favorite parts of Angular are the number of out-of-the-box components, suppor
 
 ## 9. Pop_OS!
 
-A beginner friendly Linux distribution.
+_A beginner friendly Linux distribution._
 
 [Home](https://pop.system76.com/) / [GitHub](https://github.com/pop-os) / [Getting Started]()
 
@@ -37,7 +37,7 @@ Overall, Pop is an excellent beginner-friendly Linux OS that ships with a lot of
 
 ## 8. Jekyll
 
-A simple framework for building web apps with markdown content.
+_A simple framework for building web apps with markdown content._
 
 [Home](https://jekyllrb.com/) / [GitHub](https://github.com/jekyll/jekyll) / [Getting Started](https://jekyllrb.com/docs/)
 
@@ -51,7 +51,7 @@ Time will tell how well it handles SEO-optimizations, but since the Markdown+HTM
 
 ## 7. Rocket
 
-An elegant and well-documented Rust server framework.
+_An elegant and well-documented Rust web framework._
 
 [Home](https://rocket.rs/) / [GitHub](https://github.com/SergioBenitez/Rocket) / [Getting Started](https://rocket.rs/v0.4/guide/)
 
@@ -59,24 +59,54 @@ Quick Disclaimer: Rocket currently requires the nightly version of Rust to build
 
 Rocket is the most fun web server I've ever used. It has built-in support for lots of different things you might want to use a web framework for. And the best part is that it doesn't require any hacky workarounds to be useful. Everything feels natural to the Rust ecosystem and Rust's compiler safety is preserved.
 
-## 6. C# 8
+## 6. C#
 
 [Home]() / [GitHub]() / [Getting Started]()
 
-## 5. ASP.NET Core 3.1
+_A powerful, easy to use, and fun object-oriented programming language with excellent tooling and library support._
+
+I view C# as an improved form of Java. The runtime (CLR) is much easier to install than the JDK and the tooling around building, running, testing, and deploying C# code is much simpler than the Java equivalents.
+
+Everything required to build C# programs can be installed from the [dotnet download page](https://dotnet.microsoft.com/download).
+
+Some excellent language enhancements included in the upcoming C# 9 release make it my number 1 recommendation for an object-oriented language.
+
+## 5. ASP .NET
 
 [Home]() / [GitHub]() / [Getting Started]()
+
+_An extensive web framwework for C#._
 
 ## 4. NuShell
 
 [Home]() / [GitHub]() / [Getting Started]()
 
+_An improved terminal experience._
+
 ## 3. VS Code
 
 [Home]() / [GitHub]() / [Getting Started]()
 
+_The last editor I will ever need._
+
 ## 2. F#
 
-For an example project I built using F#, check out [Formula Team Manager](https://github.com/b-vennes/formula-team-manager) on GitHub.
+_A functional programming language with excellent tooling, libraries, documentation, and features._
+
+I use F# for solving [Project Euler]() math problems. Check out my repository of simple solutions [here]().
+
+For an example project I built using F#, take a glance at [Formula Team Manager](https://github.com/b-vennes/formula-team-manager) on GitHub.
 
 ## 1. Rust
+
+_The best programming language I've ever used._
+
+Rust is in a class of its when it comes to programming languages. It has everything you could possibly need from a programming language (except a low learning curve).
+
+Rust's execution performance rivals C and C++, while also having a modern and user friendly syntax.
+
+Its solution to memory management and garbage collection actually requires the developer to put some thought into the strcture and architecture of their code. Although sometimes feeling like a blocker, the compiler forces the developer to write code that is thread safe and thoughtful about variable state and ownership.
+
+No other langauge improves my ability to write better code in all aspects of programming like Rust does. If you have not tried it, I highly recommend taking a look for yourself.
+
+[The Rust Book](https://doc.rust-lang.org/book) is a great place to start!
