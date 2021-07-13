@@ -7,10 +7,8 @@ GEM
       minitest (~> 5.1)
       tzinfo (~> 1.1)
       zeitwerk (~> 2.2, >= 2.2.2)
-    addressable (2.7.0)
+    addressable (2.8.0)
       public_suffix (>= 2.0.2, < 5.0)
-    autoprefixer-rails (9.7.6)
-      execjs
     coffee-script (2.4.1)
       coffee-script-source
       execjs
@@ -200,8 +198,6 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    materialize-sass (1.0.0)
-      autoprefixer-rails (>= 6.0.3)
     mercenary (0.3.6)
     mini_portile2 (2.4.0)
     minima (2.5.1)
@@ -256,8 +252,6 @@ PLATFORMS
 DEPENDENCIES
   github-pages
   jekyll-feed (~> 0.12)
-  materialize-sass
-  minima
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
